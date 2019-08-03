@@ -33,7 +33,11 @@
     color:black;
 }
 .topNavBar {
-    padding: 12px 16px 12px 16px;
+    padding: 12px 0px 12px 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 nav {
     float: right;
@@ -45,6 +49,12 @@ a {
 }
 body {
     margin:0;
+    background-color: #efefef;
+    height:1200px;
+}
+* {
+    margin:0;
+    padding: 0;
 }
 .topNavBar>nav>ul>li>a:hover{
     border-bottom: 3px  solid #e06567;
@@ -61,6 +71,83 @@ body {
 }
 
 .topNavBar .logo .card {
-    color: rgb(133, 133, 133);
+    color: rgb(224, 224, 224);
 
+}
+.banner {
+    height: 515px;
+    background-image: url(./img/bgc.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.mask {
+    height: 515px;
+    background-color: rgba(0,0,0,0.8);
+}
+/* 名片部分 */
+.userCard {
+    border: 1px solid red;
+    background-color: #fff;
+    margin:0 auto;
+    max-width: 830px;
+
+    
+}
+.userCard .welcome {
+    background-color: #e6686a;
+    color: white;
+    /* width: 70px; */
+    /* height: 29px; */
+    display: inline-block;
+    padding: 4px 16px;
+    line-height: 22px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.userCard .pictureAndtext {
+    padding: 50px;
+}
+.welcome .triangle {
+    border:10px solid transparent;
+    width: 0;
+    border-left-color: rgb(165, 56, 58);
+    border-top-width: 0px;
+    display: block;
+    position: absolute;
+    left:4px;
+    top: 100%;
+}
+.userCard .picture {
+    float:left;
+
+}
+.userCard .text {
+    float:left;
+    margin-left: 65px;
+    width: 250px;
+}
+.userCard h1 {
+    margin-top: 18px;
+}
+hr {
+    height:0;
+    border: none;
+    border-top: 1px solid #dedede;
+}
+.userCard hr {
+    margin:20px 0;
+}
+.userCard dl dt,
+.userCard dl dd {
+    float:left;
+    padding: 10px 0px;
+}
+.userCard dl dt {
+    font-weight: bold;
+    width:30%;
+}
+.userCard dl dd {
+    color: #9da0a7;
+    width:50%;
+    padding-left: 35px;
 }
