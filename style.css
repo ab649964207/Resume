@@ -1,37 +1,70 @@
+nav {
+    float: right;
+    margin: 5px 0px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    background-color: #efefef;
+    height: 1200px;
+    position: relative;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    height: 0;
+    border: none;
+    border-top: 1px solid #dedede;
+}
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
 .clearfix::after {
     content: "";
     display: block;
     clear: both;
 }
-.topNavBar>nav>ul{
-     list-style:none;
-     margin:0;
-     padding: 0;
-     
-     display: block;
-
-}
-.topNavBar>nav>ul>li{
-    float: left;
-    margin:0 17px;
+.topNavBar>nav>ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: block;
-
 }
+.topNavBar>nav>ul>li {
+    float: left;
+    margin: 0 17px;
+    display: block;
+}
+
 .topNavBar>nav>ul>li>a {
     font-size: 12px;
-    color:#b7b7b7;
+    color: #b7b7b7;
     text-decoration: none;
     font-weight: bold;
     display: block;
     padding: 3px 0px;
     border: 3px 0px transparent;
-    padding:10px 0px;
-    
+    padding: 10px 0px;
 }
+
 .logo {
-    float:left;
-    color:black;
+    float: left;
+    color: black;
 }
+
 .topNavBar {
     padding: 12px 0px 12px 16px;
     position: fixed;
@@ -39,60 +72,48 @@
     left: 0;
     width: 100%;
 }
-nav {
-    float: right;
-    margin: 5px 0px;
-}
-a {
-    color:inherit;
-    text-decoration: none;
-}
-body {
-    margin:0;
-    background-color: #efefef;
-    height:1200px;
-}
-* {
-    margin:0;
-    padding: 0;
-}
-.topNavBar>nav>ul>li>a:hover{
-    border-bottom: 3px  solid #e06567;
+
+.topNavBar>nav>ul>li>a:hover {
+    border-bottom: 3px solid #e06567;
     border-top: 3px transparent;
 }
+
 .topNavBar .logo {
     font-size: 24px;
     font-family: "Arial Black";
-    padding:3px 0px 4px 0px;
+    padding: 3px 0px 4px 0px;
 }
-.topNavBar .logo .rs{
+
+.topNavBar .logo .rs {
     margin-right: 4px;
     color: #e06567;
 }
 
 .topNavBar .logo .card {
     color: rgb(224, 224, 224);
-
 }
+
 .banner {
     height: 515px;
     background-image: url(./img/bgc.jpg);
     background-position: center center;
     background-size: cover;
 }
+
 .mask {
     height: 515px;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
 }
-/* 名片部分 */
-.userCard {
-    border: 1px solid red;
-    background-color: #fff;
-    margin:0 auto;
-    max-width: 830px;
 
-    
+/* 名片部分 */
+
+.userCard {
+    background-color: #fff;
+    margin: 0 auto;
+    max-width: 830px;
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.18);
 }
+
 .userCard .welcome {
     background-color: #e6686a;
     color: white;
@@ -104,50 +125,111 @@ body {
     position: relative;
     margin-bottom: 10px;
 }
+
 .userCard .pictureAndtext {
     padding: 50px;
 }
+
 .welcome .triangle {
-    border:10px solid transparent;
+    border: 10px solid transparent;
     width: 0;
     border-left-color: rgb(165, 56, 58);
     border-top-width: 0px;
     display: block;
     position: absolute;
-    left:4px;
+    left: 4px;
     top: 100%;
 }
-.userCard .picture {
-    float:left;
 
+.userCard .picture {
+    float: left;
+    padding-bottom: 45px;
 }
+
 .userCard .text {
-    float:left;
+    float: left;
     margin-left: 65px;
     width: 250px;
 }
+
+.text p {
+    padding-top: 15px;
+}
+
 .userCard h1 {
     margin-top: 18px;
 }
-hr {
-    height:0;
-    border: none;
-    border-top: 1px solid #dedede;
-}
+
 .userCard hr {
-    margin:20px 0;
+    margin: 20px 0;
+    width: 300px;
 }
-.userCard dl dt,
-.userCard dl dd {
-    float:left;
+
+.userCard dl dt, .userCard dl dd {
+    float: left;
     padding: 10px 0px;
 }
+
 .userCard dl dt {
     font-weight: bold;
-    width:30%;
+    width: 30%;
 }
+
 .userCard dl dd {
     color: #9da0a7;
-    width:50%;
+    width: 50%;
     padding-left: 35px;
+}
+
+.media {
+    margin: 0 auto;
+    max-width: 830px;
+    background-color: #e06567;
+    text-align: center;
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.18);
+}
+
+.media .icon {
+    font-size: 20px;
+    padding: 20px 20px;
+    fill: white;
+}
+
+.media a {
+    display: inline-block;
+    border-radius: 50%;
+    margin: 10px 15px;
+    transition: background 0.3s;
+}
+
+.media a:hover {
+    background: #cd5d5f;
+}
+
+main {
+    margin-top: -400px;
+}
+
+.downloadResume {
+    font-size: 14px;
+    padding: 21px 55px;
+    line-height: 16px;
+    display: inline-block;
+    background-color: #efefef;
+    border: 1px solid #cdcfd1;
+    border-radius: 4px;
+    color: #3d4451;
+    font-weight: bold;
+    margin: 30px 0;
+    transition: box-shadow 0.7s;
+}
+
+.downloadResume-wrapper {
+    text-align: center;
+    display: block;
+    margin: 15px 0;
+}
+
+.downloadResume:hover {
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.18);
 }

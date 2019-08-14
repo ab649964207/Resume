@@ -30,3 +30,12 @@ fixed定位的
 ### 父盒子加height，宽度100%加padding两大bug
 解决方法：多嵌套一个div，给子div加padding
 ### position: absolute 脱离文档流，寻找父元素第一个relative相对浮动
+ ### vertical-align:top;
+ ### 伪元素 ::before,::after,
+ div 的两个不显示的元素 ，有内容也不可被选中
+ ### 内联元素居中，在父元素加center
+ ```html
+ <p style="text0-align:center;">
+    <a>
+</p>
+ ```

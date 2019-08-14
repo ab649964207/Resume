@@ -5,9 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>craeycheng</title>
+    <link rel="stylesheet" href="loading.css">
     <link rel="stylesheet" href="style.css">
+    <script src="//at.alicdn.com/t/font_1332679_opdak6ds78s.js"></script>
+    <style type="text/css">
+        
+    </style>
 </head>
 <body>
+    <div id="loading" class="siteWelcome active" >
+        <div class="loading">
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
     <div class="topNavBar clearfix" >
         <a href="#" class="logo" alt="logo">
             <span class="rs">CR</span><span class="card">cheng</span>
@@ -50,13 +61,53 @@
                         <dt>所在城市</dt>
                         <dd>广州</dd>
                         <dt>邮箱</dt>
-                        <dd>649964207@qq.com</dd>
+                        <dd>chengdingliang@gmail.com</dd>
                         <dt>手机</dt>
                         <dd>13233224581</dd>
                     </dl>
                 </div>
             </div>
         </div>
+        <footer class="media">
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-facebook"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-weixin"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-juejin"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-matuwang-zhihufangxingdianji"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-jianshu"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            </a>
+        </footer>
     </main>
+    <p class="downloadResume-wrapper">
+        <a class="downloadResume" href="./resume.pdf" target="_blank" download=""><strong>DOWNLOAD RESUME</strong> </a>
+    </p> 
+    <script>
+        setTimeout(function () {
+            loading.classList.remove('active');
+        },2100)
+    </script>
 </body>
 </html>
