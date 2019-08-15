@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,41 +9,46 @@
     <link rel="stylesheet" href="loading.css">
     <link rel="stylesheet" href="style.css">
     <script src="//at.alicdn.com/t/font_1332679_opdak6ds78s.js"></script>
-    <style type="text/css">
-        
-    </style>
 </head>
+
 <body>
-    <div id="loading" class="siteWelcome active" >
+    <div id="loading" class="siteWelcome active">
         <div class="loading">
             <div class="circle"></div>
             <div class="circle"></div>
         </div>
     </div>
-    <div class="topNavBar clearfix" >
+    <div id="topNavBar" class="topNavBar clearfix">
         <a href="#" class="logo" alt="logo">
-            <span class="rs">CR</span><span class="card">cheng</span>
+            <span class="rs">DL</span><span class="card">cheng</span>
         </a>
         <nav>
             <ul>
-                <li><a href="#">关于</a></li>
-                <li><a href="#">关于</a></li>
-                <li><a href="#">关于</a></li>
-                <li><a href="#">关于</a></li>
-                <li><a href="#">关于</a></li>
-                <li><a href="#">关于</a></li>
+                <li><a href="#me">关于</a></li>
+                <li><a href="#">技能</a></li>
+                <li class="menuTigger">
+                    <a href="#">作品</a>
+                    <ul class="submenu">
+                        <li>作品1</li>
+                        <li>作品2</li>
+                        <li>作品3</li>
+                    </ul>
+                </li>
+                <li><a href="#me">博客</a></li>
+                <li><a href="#">联系方式</a></li>
+                <li><a href="#">其他</a></li>
                 <li style="padding-right: 16px"><a href="#">关于</a></li>
 
             </ul>
 
         </nav>
-        
+
     </div>
     <div class="banner">
         <div class="mask">
         </div>
     </div>
-    <main>
+    <main id="me">
         <div class="userCard clearfix">
             <div class="pictureAndtext">
                 <div class="picture">
@@ -103,11 +109,14 @@
     </main>
     <p class="downloadResume-wrapper">
         <a class="downloadResume" href="./resume.pdf" target="_blank" download=""><strong>DOWNLOAD RESUME</strong> </a>
-    </p> 
+    </p>
     <script>
         setTimeout(function () {
             loading.classList.remove('active');
-        },2100)
+        }, 10000)
     </script>
+    <script src="main.js  "></script>
+
 </body>
+
 </html>
