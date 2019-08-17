@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>craeycheng</title>
+    <title>LIANG</title>
     <link rel="stylesheet" href="loading.css">
     <link rel="stylesheet" href="style.css">
-    <script src="//at.alicdn.com/t/font_1332679_opdak6ds78s.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.1/css/swiper.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.4.0/Tween.js"></script>
+    <script src="//at.alicdn.com/t/font_1332679_5g30bq05gbm.js"></script>
 </head>
 
 <body>
@@ -18,23 +20,23 @@
             <div class="circle"></div>
         </div>
     </div>
-    <div id="topNavBar" class="topNavBar clearfix">
+    <div  id="topNavBar" class="topNavBar clearfix">
         <a href="#" class="logo" alt="logo">
             <span class="rs">DL</span><span class="card">cheng</span>
         </a>
-        <nav>
+        <nav class="topNav">
             <ul>
                 <li><a href="#me">关于</a></li>
-                <li><a href="#">技能</a></li>
+                <li><a href="#skills">技能</a></li>
                 <li class="menuTigger">
-                    <a href="#">作品</a>
+                    <a href="#portfolio">作品</a>
                     <ul class="submenu">
                         <li>作品1</li>
                         <li>作品2</li>
                         <li>作品3</li>
                     </ul>
                 </li>
-                <li><a href="#me">博客</a></li>
+                <li><a href="#blog">博客</a></li>
                 <li><a href="#">联系方式</a></li>
                 <li><a href="#">其他</a></li>
                 <li style="padding-right: 16px"><a href="#">关于</a></li>
@@ -48,7 +50,7 @@
         <div class="mask">
         </div>
     </div>
-    <main id="me">
+    <main data-x  id="me" class="offset ">
         <div class="userCard clearfix">
             <div class="pictureAndtext">
                 <div class="picture">
@@ -59,7 +61,7 @@
                         <span class="triangle"></span>
                     </span>
                     <h1>程丁良</h1>
-                    <p>前端开发工程师</p>
+                    <p>前端开发练习生</p>
                     <hr>
                     <dl>
                         <dt>年龄</dt>
@@ -110,12 +112,134 @@
     <p class="downloadResume-wrapper">
         <a class="downloadResume" href="./resume.pdf" target="_blank" download=""><strong>DOWNLOAD RESUME</strong> </a>
     </p>
+    <div class="selfIntroduction">
+        <p>大家好，我是练习时长两个月的个人前端开发练习生程丁良</p>
+        <p>掌握HTML、CSS、JavaScript等前端必备技能，熟悉Ajax、JavaScript、DOM等前端技术,掌握面向对象的编程思想。熟悉后台开发语言NodeJS，具有Jquery、Vue相关开发经验</p>
+        <p>感谢您来访我的网站！</p>
+    </div>
+
+    <section data-x  id="skills" class="skills offset">
+        <h2>技能</h2>
+        <ol class="clearfix">
+            <h3></h3>
+            <li>
+                <h3>HTML 5 &amp; CSS3</h3>
+                <div class="progressBar">
+                    <div class="progress default" style="width: 80%"></div>
+                </div>
+            </li>
+            <li>
+                <h3>JavaScript</h3>
+                <div class="progressBar">
+                    <div class="progress default" style="width: 80%"></div>
+                </div>
+            </li>
+            <li>
+                <h3>jQuery</h3>
+                <div class="progressBar">
+                    <div class="progress default" style="width: 60%"></div>
+                </div>
+            </li>
+            <li>
+                <h3>Vue</h3>
+                <div class="progressBar">
+                    <div class="progress default" style="width: 70%"></div>
+                </div>
+            </li>
+            <li>
+                <h3>PS &amp; AI</h3>
+                <div class="progressBar ">
+                    <div class="progress default" style="width: 90%"></div>
+                </div>
+            </li>
+            <li>
+                <h3>HTTP</h3>
+                <div class="progressBar">
+                    <div class="progress default"style="width: 86%"></div>
+                </div>
+            </li>
+        </ol>
+    </section>
+    <section data-x class="portfolio offset" id="portfolio">
+        <h2>作品集</h2>
+        <nav>
+            <ol class="clearfix">
+                <li id="protfolioALL">所有</li>
+                <li id="protfolioFramework">框架</li>
+                <li id="protfolioVallina">原生JS&amp;CSS</li>
+            </ol>
+            <div id="protfolioSlider" class="bar state-1">
+
+                <div class="bar-inner">
+
+                </div>
+            </div>
+        </nav>
+        <div class="jobs">
+            <div class="big"></div>
+            <div class="small"></div>
+            <div class="small"></div>
+        </div>
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <img src="img/canvas.png" class="swiper-slide">
+                <img src="img/navigation.png" class="swiper-slide">
+                <img src="img/navigation.png" class="swiper-slide">
+            </div>
+
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>  
+            <div class="swiper-button-next"></div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+       
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.1/js/swiper.js"></script>
+
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            // Optional parameters
+          
+            loop: true,
+
+           
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+          
+            
+        })
+    </script>
+
     <script>
         setTimeout(function () {
             loading.classList.remove('active');
-        }, 10000)
+        }, 300)
     </script>
     <script src="main.js  "></script>
+
 
 </body>
 
