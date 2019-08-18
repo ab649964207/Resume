@@ -102,7 +102,7 @@
                     <use xlink:href="#icon-jianshu"></use>
                 </svg>
             </a>
-            <a href="#">
+            <a href="https://github.com/ab649964207?tab=repositories" target="_blank">
                 <svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-github"></use>
                 </svg>
@@ -113,7 +113,7 @@
         <a class="downloadResume" href="./resume.pdf" target="_blank" download=""><strong>DOWNLOAD RESUME</strong> </a>
     </p>
     <div class="selfIntroduction">
-        <p>大家好，我是练习时长两个月的个人前端开发练习生程丁良</p>
+        <p>大家好，我是练习时长半年的个人前端开发练习生程丁良</p>
         <p>掌握HTML、CSS、JavaScript等前端必备技能，熟悉Ajax、JavaScript、DOM等前端技术,掌握面向对象的编程思想。熟悉后台开发语言NodeJS，具有Jquery、Vue相关开发经验</p>
         <p>感谢您来访我的网站！</p>
     </div>
@@ -184,9 +184,13 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
-                <img src="img/canvas.png" class="swiper-slide">
-                <img src="img/navigation.png" class="swiper-slide">
-                <img src="img/navigation.png" class="swiper-slide">
+                <a href="https://ab649964207.github.io/canvas-demo/index.html" class="swiper-slide">
+                    <img src="img/canvas.png" class="swiper-slide" ">
+                </a>
+                <a href="https://ab649964207.github.io/Navigation_page/index.html" class="swiper-slide" >
+                    <img src="img/navigation.png" class="swiper-slide">
+                </a>
+                
             </div>
 
             <div class="swiper-pagination"></div>
@@ -199,14 +203,13 @@
     <section class="message" id="message_board">
         <h2>留言板</h2>
         <ol id="messageList">
-            <li> <img src="./img/avatar/avatar (9).png" class="avatar" alt=""></div> sss</li>
 
         </ol>
         <form id="postMessageForm" action="">
             <div class="aratar_options">
                 <img src="./img/avatar/avatar (1).png" value='1' alt="">
                 <img src="./img/avatar/avatar (2).png" value='2' alt="">
-                <img src="./img/avatar/avatar (3).png" value='3'  alt="">
+                <img src="./img/avatar/avatar (3).png" value='3' alt="">
                 <img src="./img/avatar/avatar (4).png" value='4' alt="">
                 <img src="./img/avatar/avatar (5).png" value='5' alt="">
                 <img src="./img/avatar/avatar (6).png" value='6' alt="">
@@ -222,10 +225,11 @@
             </div>
             <div class="input">
                 <label for="">呢称</label>
-                <input class="name" type="text" name="name">
+                <input class="name" type="text" name="name" placeholder="选个头像吧" autocomplete="off">
                 <label for="">内容</label>
-                <input class="content" type="text" name="content">
-                <input type="submit" name="" id="" value="提交">
+                <input class="content" type="text" name="content" placeholder="您有什么建议，想法，都可以留言哦~~" autocomplete="off">
+                <input type="submit" name="" id="message_board_button" value="上 墙">
+
             </div>
 
 

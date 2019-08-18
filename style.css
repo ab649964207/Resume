@@ -57,9 +57,9 @@ h1, h2, h3, h4, h5, h6 {
     top: 0;
     left: 0;
     width: 100%;
-    transition: all 0.7s;
-    z-index: 1;
-    color: rgb(151, 151, 151);
+    transition: all 0.3s;
+    z-index: 11;
+    color: rgb(214, 214, 214);
 }
 
 .topNavBar.sticky {
@@ -455,6 +455,15 @@ section.portfolio>nav .bar.state-3 .bar-inner {
     background-color: #fff;
 }
 
+.swiper-container img:hover {
+    transform: scale(1.2)
+    
+}
+
+.swiper-container img {
+    transition: all 2s;
+}
+
 main.offset {
     transform: translateY(200px);
 }
@@ -472,6 +481,26 @@ section .swiper-button-next {
 }
 
 section .swiper-button-next:hover {
+    animation: leap 1s infinite;
+}
+
+section .swiper-button-prev:hover {
+    animation: leap 1s infinite;
+}
+
+@keyframes leap {
+    0% {
+        transform: translateX(-8px);
+    }
+    50% {
+        transform: translateX(8px);
+    }
+    100% {
+        transform: translateX(-8px);
+    }
+}
+
+section .swiper-button-next:hover {
     scale:
 }
 
@@ -486,6 +515,7 @@ section.message>ol {
     margin: 0 auto;
     background-color: #fff;
     position: relative;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.18);
 }
 
 section.message>ol>li {
@@ -498,6 +528,16 @@ section.message>ol>li {
 section.message form {
     margin: 10px auto;
     position: relative;
+}
+
+section.message label {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Microsoft soft";
+}
+
+#message_board_button:hover {
+    background-color: #cfcfcf;
 }
 
 section.message form input {
@@ -572,6 +612,7 @@ section.message>ol>li>.avatar {
 .message .aratar_options.active {
     display: block;
 }
+
 .message .aratar_options img {
     margin: 0 4px;
     width: 40px;
