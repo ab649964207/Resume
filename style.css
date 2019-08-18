@@ -335,7 +335,7 @@ section {
     font-size: 18px;
 }
 
-section.portfolio>h2, section.skills>h2 {
+section>h2 {
     text-align: center;
     color: #3d4451;
     font-size: 34px;
@@ -473,4 +473,113 @@ section .swiper-button-next {
 
 section .swiper-button-next:hover {
     scale:
+}
+
+section.message {
+    max-width: 940px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+section.message>ol {
+    max-width: 940px;
+    margin: 0 auto;
+    background-color: #fff;
+    position: relative;
+}
+
+section.message>ol>li {
+    border-top: 1px solid #ddd;
+    padding: 25px;
+    font-size: 20px;
+    position: relative;
+}
+
+section.message form {
+    margin: 10px auto;
+    position: relative;
+}
+
+section.message form input {
+    outline-style: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 13px 14px;
+    width: 75px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Microsoft soft";
+}
+
+section.message form .input .name {
+    width: 100px;
+    margin: 0 10px;
+}
+
+section.message form .input .content {
+    width: 500px;
+    margin-left: 10px;
+}
+
+section.message>ol>li>.avatar {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    margin-top: -20px;
+}
+
+.avatar_selector {
+    position: relative;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.avatar_selector .avatar {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+
+.avatar_selector:hover {
+    box-shadow: 0px 0px 1px 1px #ddd;
+    border-radius: 50%;
+}
+
+#postMessageForm {
+    position: relative;
+}
+
+.message .input {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    margin-top: -20px;
+}
+
+.message .aratar_options {
+    position: absolute;
+    max-width: 940px;
+    border: 1px solid rgb(206, 206, 206);
+    top: 105%;
+    left: 0px;
+    padding: 30px;
+    display: none;
+}
+
+.message .aratar_options.active {
+    display: block;
+}
+.message .aratar_options img {
+    margin: 0 4px;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+
+.message .aratar_options img:hover {
+    box-shadow: 0px 0px 1px 1px #ddd;
+    border-radius: 5px;
 }
