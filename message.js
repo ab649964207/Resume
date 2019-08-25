@@ -61,6 +61,7 @@
         bindEvents: function () {
             console.log(this);
 
+<<<<<<< HEAD
             this.form.addEventListener('submit',  (event) =>{
                 event.preventDefault()
 
@@ -69,6 +70,16 @@
             this.avatar_selector.addEventListener('click', (event) => {
                 this.choseAvatar()
             })
+=======
+            this.form.addEventListener('submit', function (event) {
+                event.preventDefault()
+
+                this.saveMessage()
+            }.bind(controller))
+            this.avatar_selector.addEventListener('click', function (event) {
+                this.choseAvatar()
+            }.bind(controller))
+>>>>>>> 0fe996546cd7fdebfbdf01dad46270b578d917f6
         },
         saveMessage: function () {
             myForm = this.form;
