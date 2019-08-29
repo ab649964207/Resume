@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .topNav {
-    float: right;
+    /* transform: translateX(50%); */
 }
 
 .clearfix::after {
@@ -54,6 +54,7 @@ h1, h2, h3, h4, h5, h6 {
 .topNavBar {
     padding: 15px 0px 15px 16px;
     position: fixed;
+    text-align: center;
     top: 0;
     left: 0;
     width: 100%;
@@ -73,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: block;
+    display: inline-block;
 }
 
 .topNavBar>nav>ul>li {
@@ -90,7 +91,7 @@ h1, h2, h3, h4, h5, h6 {
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #e8676b;
+    background-color: #444;
     height: 5px;
     animation: menuSlide 0.5s;
 }
@@ -113,29 +114,28 @@ h1, h2, h3, h4, h5, h6 {
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #e8676b;
+    background-color: #444444;
     height: 5px;
     animation: menuSlide 0.5s;
 }
 
 .topNavBar .logo {
+    left: 2%;
+    position: absolute;
     font-size: 24px;
     font-family: "Arial Black";
     padding: 3px 0px 4px 0px;
+    float: left;
+    color: black;
 }
 
 .topNavBar .logo .rs {
     margin-right: 4px;
-    color: #e06567;
+    color: #4d4d4d;
 }
 
 .topNavBar .logo .card {
     color: rgb(224, 224, 224);
-}
-
-.topNavBar .logo {
-    float: left;
-    color: black;
 }
 
 .topNavBar .submenu {
@@ -201,7 +201,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .userCard .welcome {
-    background-color: #e6686a;
+    background-color: #6b6b6b;
     color: white;
     /* width: 70px; */
     /* height: 29px; */
@@ -219,7 +219,7 @@ h1, h2, h3, h4, h5, h6 {
 .welcome .triangle {
     border: 10px solid transparent;
     width: 0;
-    border-left-color: rgb(165, 56, 58);
+    border-left-color: rgb(63, 63, 63);
     border-top-width: 0px;
     display: block;
     position: absolute;
@@ -270,7 +270,7 @@ h1, h2, h3, h4, h5, h6 {
 .media {
     margin: 0 auto;
     max-width: 830px;
-    background-color: #e06567;
+    background-color: #444444;
     text-align: center;
     box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.18);
 }
@@ -289,7 +289,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .media a:hover {
-    background: #cd5d5f;
+    background: #585858;
 }
 
 main {
@@ -371,7 +371,7 @@ section.skills>ol>li:nth-child(even) {
 
 section.skills .progressBar {
     height: 5px;
-    background-color: #fae1e1;
+    background-color: #cccccc;
     border-radius: 2px;
     margin: 4px 0 30px 0;
 }
@@ -382,7 +382,7 @@ section.skills .progressBar .progress.default {
 
 section.skills .progressBar .progress {
     height: 100%;
-    background-color: #e6686a;
+    background-color: #4d4d4d;
     width: 70%;
     border-radius: 2px;
     transition: all 2s;
@@ -425,7 +425,7 @@ section.portfolio>nav .bar {
 
 section.portfolio>nav .bar-inner {
     height: 100%;
-    background-color: #e6686a;
+    background-color: #474747;
     width: 15%;
     border-radius: 2px;
     margin-left: 0;
@@ -447,6 +447,62 @@ section.portfolio>nav .bar.state-3 .bar-inner {
     width: 45%;
 }
 
+.portfolioProject-container {
+    border-radius: 5px;
+    margin: 60px 0;
+}
+
+.portfolioProject-container .portfolioProject {
+    display: table;
+    border-spacing: 30px;
+}
+
+.project {
+    display: table-cell;
+    width: 1030px;
+    border-radius: 5px;
+    height: 240px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    transition: all 0.3s;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.18);
+}
+
+.portfolioProject .tr {
+    display: table-row;
+}
+
+.project img {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    border-radius: 5px 5px 0 0;
+}
+
+.project:hover {
+    transform: scale(1.1)
+}
+
+.project .introduce h3 {
+    font-size: 1.2em;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 28%;
+}
+
+.project .introduce p {
+    display: inline-block;
+    padding: 10px 0px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    font-size: 12px;
+}
+
+/* 轮播图 */
+
 .swiper-container {
     margin-top: 60px;
     margin-bottom: 60px;
@@ -457,7 +513,6 @@ section.portfolio>nav .bar.state-3 .bar-inner {
 
 .swiper-container img:hover {
     transform: scale(1.2)
-    
 }
 
 .swiper-container img {
