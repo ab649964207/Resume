@@ -111,3 +111,10 @@ function findClosestAndRemoveOffset() {
     
 }  
 
+weixin.addEventListener('click',(e)=>{
+    weixinContact.classList.add('active')
+    
+})
+closeButton.addEventListener('click',(e)=>{
+    weixinContact.classList.remove('active')
+})
