@@ -68,15 +68,39 @@ for (let i = 0; i < aTags.length; i++) {
     }
     
 }
+let projects = document.querySelectorAll('.project')
+projects = Array.prototype.slice.call(projects)
+
+
 
 protfolioALL.onclick = function () {   
     protfolioSlider.className = 'bar state-1'
+    for (let i = 0; i < projects.length; i++) {
+        projects[i].classList.add('active')
+    }
+    
 }
 protfolioFramework.onclick = function () {
     protfolioSlider.className = 'bar state-2'
+    for (let i = 0; i < projects.length; i++) {
+        projects[i].classList.remove('active')
+        if (projects[i].attributes[1].nodeValue === 'Vue') {
+            projects[i].classList.add('active')
+        }
+        
+        
+    }
 }
 protfolioVallina.onclick = function () {
     protfolioSlider.className = 'bar state-3'
+    for (let i = 0; i < projects.length; i++) {
+        projects[i].classList.remove('active')
+        if (projects[i].attributes[1].nodeValue === 'JavaScript') {
+            projects[i].classList.add('active')
+        }
+
+
+    }
 }
 
 window.addEventListener('scroll', function () {
@@ -118,3 +142,6 @@ weixin.addEventListener('click',(e)=>{
 closeButton.addEventListener('click',(e)=>{
     weixinContact.classList.remove('active')
 })
+
+
+// 修改作品展示

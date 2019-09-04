@@ -450,26 +450,32 @@ section.portfolio>nav .bar.state-3 .bar-inner {
 .portfolioProject-container {
     border-radius: 5px;
     margin: 60px 0;
+    max-width: 940px;
 }
 
 .portfolioProject-container .portfolioProject {
-    display: table;
+    display: flex;
     border-spacing: 30px;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 .project {
-    display: table-cell;
-    width: 1030px;
+    margin: 10px 10px;
+    display: none;
+    flex-direction: row;
+    width: 30%;
     border-radius: 5px;
     height: 240px;
     background-color: rgb(255, 255, 255);
     position: relative;
+    float: left;
     transition: all 0.3s;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.18);
 }
 
-.portfolioProject .tr {
-    display: table-row;
+.project.active {
+    display: block;
 }
 
 .project img {
@@ -739,7 +745,7 @@ section.message>ol>li>.avatar {
     height: 30px;
     right: 5px;
     background-color: transparent;
-    border: none; 
+    border: none;
 }
 
 .weixincard .closeButton:hover {
