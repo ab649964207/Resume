@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/ab649964207/Resume#readme",
   "devDependencies": {
-    "webpack": "^4.39.2"
+    "webpack": "^5.75.0"
   }
 }
